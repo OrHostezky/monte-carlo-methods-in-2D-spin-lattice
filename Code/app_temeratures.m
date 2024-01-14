@@ -9,8 +9,8 @@
 
 % The scheme is flexible regarding both the possible spin values and the
 % used algorithm, such that additional algorithms can be easily added to
-% the modeling framework (by adding new 'step__*.m' functions and including
-% them in 'sim_basic.m'). Furthermore, wide generalizations can be made
+% the modeling framework (by adding new step__*() functions and including
+% them in sim_basic()). Furthermore, wide generalizations can be made
 % with just a few steps (for example, an external field or higher order
 % interactions can be included by slight modifications to the coupling or
 % interaction functions, respectively). Introducing different models to it
@@ -37,29 +37,29 @@
 %%% is described. For a more specific description, look at each script
 %%% specifically.
 
-% 'nearest_neighbors_2D_open.m' and 'coupling_nearest_neighbors_2D.m' are
+% nearest_neighbors_2D_open() and coupling_nearest_neighbors_2D() are
 % the most basic functions, regarding spin ineteractions in a given matrix.
 
-% The 'step__*.m' functions execute the spin dynamics (a single algorithm-
+% The step__*() functions execute the spin dynamics (a single algorithm-
 % step) using the interaction functions, each of which adheres to a
 % different algorithm and model.
-% 'form_cluster.m' is a sub-function of the Wolff-algorithm step function.
+% form_cluster() is a sub-function of the Wolff-algorithm step function.
 
-% 'cluster_size__wolff__2D_ising.m' finds the typical spin-cluster sizes
+% cluster_size__wolff__2D_ising() finds the typical spin-cluster sizes
 % in the Wolff algorithm at a given temperature.
 
-% The '*_correlation.m' functions regard the auto-correlation of the system
+% The *_correlation() functions regard the auto-correlation of the system
 % between different steps (i.e. 'time' correlation), which helps to derive
 % the system's decorrelation time, and thus to determine the needed number
 % of steps between following measurements (in order to get meaningful data
 % thermodynamically).
-% 'plot__correlation.m' is called by 'sim_correlation.m'.
+% plot__correlation() is called by sim_correlation().
 
-% The 'sim_*.m' functions execute the actual simulations, and communnicate
-% between the apply scripts and the step functions (or 'find_correlation.m'
-% in the case of 'sim_correlation.m'). Their inner heirarchy is as such:
-%   'sim_temperatures.m' ---> 'sim_smpl_avrg.m' ---> 'sim_basic.m'
-% 'plot__M_E_C_X__vs__T.m' is called by 'sim_temperatures.m'.
+% The sim_*() functions execute the actual simulations, and communnicate
+% between the apply scripts and the step functions (or find_correlation()
+% in the case of sim_correlation()). Their inner heirarchy is as such:
+%   sim_temperatures() ---> sim_smpl_avrg() ---> sim_basic()
+% plot__M_E_C_X__vs__T() is called by sim_temperatures().
 
 % The 'app_*.m' scripts are the main scripts that apply the simulation
 % scheme, and are executed directly by the user.
