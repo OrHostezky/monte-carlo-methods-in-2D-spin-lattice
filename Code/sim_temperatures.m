@@ -1,5 +1,5 @@
 function [M, E, C, X] = sim_temperatures(L, T, q, algorithm, tau, sample, plt)
-%%%%% This scripts serves as an envelope to 'sim_smpl_avrg.m' %%%%%
+%%%%% This scripts serves as an envelope to sim_smpl_avrg() %%%%%
 % Takes the spin-matrix side-length 'L', temperatures vector 'T', number of
 % possible spin states 'q', used algorithm 'algorithm', vector 'tau' of
 % estimated decorrelation times (related to the number of algorithm-steps
