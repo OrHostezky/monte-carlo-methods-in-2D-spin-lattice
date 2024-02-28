@@ -2,7 +2,7 @@
 
 % This repository applies a Monte-Carlo simulation scheme, involving a
 % system of spins arranged in a 2D-lattice, using different algorithms.
-% Dynamics are based on the basic Ising-model hamiltonian: 
+% Dynamics are based on the basic Ising-model Hamiltonian: 
 %   H0 = - J * sum_<i, j>(s_i * s_j) ,   <i, j>: i, j  nearest neighbors,
 % including only nearest-neighbor interactions between spins, and no
 % external magnetic field (which can be easily included).
