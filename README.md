@@ -1,6 +1,6 @@
 # Monte-Carlo methods - 2D spin lattice
 
-This repository applies  a Monte-Carlo simulation scheme, involving a system of spins arranged in a 2D-lattice, using different algorithms. Dynamics are based on the basic Ising-model hamiltonian: 
+This repository applies  a Monte-Carlo simulation scheme, involving a system of spins arranged in a 2D-lattice, using different algorithms. Dynamics are based on the basic Ising-model Hamiltonian: 
 ```math
 H_0 = - J \sum_{\langle i,\; j \rangle} s_i s_j \; , \quad   \langle i, j \rangle: i ,\; j \quad \text{are nearest neighbors} ,
 ```
