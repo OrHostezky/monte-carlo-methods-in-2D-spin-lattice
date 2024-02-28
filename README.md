@@ -6,7 +6,7 @@ H_0 = - J \sum_{\langle i,\; j \rangle} s_i s_j \; , \quad   \langle i, j \rangl
 ```
 including only nearest-neighbor interactions between spins, and no external magnetic field (which can be easily included).
 
-The scheme is flexible regarding both the possible spin values and the used algorithm, such that additional algorithms can be easily added to the modeling framework (by adding new [`step__*.m`](Code/) functions and including them in [`sim_basic.m`](Code/sim_basic.m). Furthermore, wide generalizations can be made with just a few steps (for example, an external field or higher order interactions can be included via slight modifications to the coupling or interaction functions, respectively). Introducing different models to it (such as higher-dimension lattices or angular spin directions) is reasonably achievable too, making this framework quite useful in my opinion.
+The scheme is flexible regarding both the possible spin values and the used algorithm, such that additional algorithms can be easily added to the modeling framework (by adding new [`step__*.m`](Code/) functions and including them in [`sim_basic.m`](Code/sim_basic.m). Furthermore, wide generalizations can be made with just a few steps (for example, an external field or higher order interactions can be included via slight modifications to the coupling or interaction functions, respectively). Introducing different models to it (such as higher-dimension lattices or angular spin directions) is reasonably achievable too, making this framework quite useful.
 
 Hopefully, you'll find it useful too! 🙏
       
