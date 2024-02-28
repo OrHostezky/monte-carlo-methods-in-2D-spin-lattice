@@ -15,8 +15,7 @@
 % interactions can be included by slight modifications to the coupling or
 % interaction functions, respectively). Introducing different models to it
 % (such as higher-dimension lattices or angular spin directions) is
-% reasonably achievable too, making this framework quite useful in my
-% opinion.
+% reasonably achievable too, making this framework quite useful.
 
 % Hopefully, you'll find it useful too
 %    OR HOSTEZKY
