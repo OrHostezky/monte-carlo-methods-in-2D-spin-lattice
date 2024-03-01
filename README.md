@@ -15,7 +15,8 @@ Hopefully, you'll find it useful too! 🙏
 
 ## Script Index
 
-**NOTE: Here, the general structure of this repository's [*Code*](Code/) section is described. For a more specific description, look at each script specifically.**
+> [!NOTE]
+**Here, the general structure of this repository's [*Code*](Code/) section is described. For a more specific description, look at each script specifically.**
 
 * [`nearest_neighbors_2D_open.m`](Code/nearest_neighbors_2D_open.m) and [`coupling_nearest_neighbors_2D.m`](Code/coupling_nearest_neighbors_2D.m) are the most basic functions, regarding spin ineteractions in a given matrix.
 
